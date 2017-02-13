@@ -28,6 +28,30 @@
             $this->assertEquals("D0n't y0u l0v3 th3s3 'String' 3x3rcis3s? I d0!", $result);
         }
 
+        function test_substitute1()
+        {
+            // Arrange
+            $test_object = new LeetSpeak;
+            $input = "I am Lucy";
+            // Act
+            $result = $test_object->leetTranslate($input);
+
+            // Assert
+            $this->assertEquals("1 am Lucy", $result);
+        }
+
+        function test_substituteS()
+        {
+            // Arrange
+            $test_object = new LeetSpeak;
+            $input = "Sam is a Snakes";
+            // Act
+            $result = $test_object->leetTranslate($input);
+
+            // Assert
+            $this->assertEquals("Sam iZ a Snak3Z", $result);
+        }
+
 
     }
 
